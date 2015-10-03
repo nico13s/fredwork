@@ -11,9 +11,6 @@
         <!-- Sidebar toggle button-->
         <a href="#" class="sidebar-toggle" data-toggle="offcanvas" role="button">
             <span class="sr-only">Toggle navigation</span>
-            <span class="icon-bar"></span>
-            <span class="icon-bar"></span>
-            <span class="icon-bar"></span>
         </a>
         <div class="navbar-custom-menu">
             <ul class="nav navbar-nav">
@@ -67,7 +64,7 @@
                             <li>
                                 <a href="#">
                                     <div class="pull-left">
-                                        <img src="../../dist/img/user3-128x128.jpg" class="img-circle" alt="User Image">
+                                        <img src="dist/img/user3-128x128.jpg" class="img-circle" alt="User Image">
                                     </div>
                                     <h4>
                                         Sales Department
@@ -79,7 +76,7 @@
                             <li>
                                 <a href="#">
                                     <div class="pull-left">
-                                        <img src="../../dist/img/user4-128x128.jpg" class="img-circle" alt="User Image">
+                                        <img src="dist/img/user4-128x128.jpg" class="img-circle" alt="User Image">
                                     </div>
                                     <h4>
                                         Reviewers

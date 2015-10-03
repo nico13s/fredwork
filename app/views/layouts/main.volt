@@ -43,8 +43,8 @@
             {{ partial('layouts/common/footer') }}
 
             {{ partial('layouts/common/sidebar-control') }}
-
-        </div><!-- ./wrapper -->
+        </div><!-- /.content-wrapper -->
+    </div><!-- ./wrapper -->
 
 <!-- jQuery 2.1.4 -->
 <script src="plugins/jQuery/jQuery-2.1.4.min.js"></script>
