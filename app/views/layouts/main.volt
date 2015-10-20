@@ -40,10 +40,10 @@
 
             {% block content %}{% endblock %}
 
-            {{ partial('layouts/common/footer') }}
 
-            {{ partial('layouts/common/sidebar-control') }}
         </div><!-- /.content-wrapper -->
+        {{ partial('layouts/common/sidebar-control') }}
+        {{ partial('layouts/common/footer') }}
     </div><!-- ./wrapper -->
 
 <!-- jQuery 2.1.4 -->
