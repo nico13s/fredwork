@@ -5,10 +5,10 @@ defined('APP_PATH') || define('APP_PATH', realpath('.'));
 return new \Phalcon\Config(array(
     'database' => array(
         'adapter'     => 'Mysql',
-        'host'        => 'localhost',
+        'host'        => 'db',
         'username'    => 'root',
         'password'    => '',
-        'dbname'      => 'test',
+        'dbname'      => 'fredwork',
         'charset'     => 'utf8',
     ),
     'application' => array(
@@ -18,7 +18,7 @@ return new \Phalcon\Config(array(
         'viewsDir'       => APP_PATH . '/app/views/',
         'pluginsDir'     => APP_PATH . '/app/plugins/',
         'libraryDir'     => APP_PATH . '/app/library/',
-        'cacheDir'       => APP_PATH . '/app/cache/',
-        'baseUri'        => '/fredwork2/',
+        'cacheDir'       => APP_PATH . '/cache/',
+        'baseUri'        => '/fredwork/public/',
     )
 ));
