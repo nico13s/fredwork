@@ -12,10 +12,10 @@ USE `fredwork`;
 DROP TABLE IF EXISTS `user`;
 CREATE TABLE `user` (
   `id` int(11) NOT NULL,
-  `username` varchar(50) NOT NULL,
   `firstname` varchar(50) NOT NULL,
   `lastname` varchar(50) NOT NULL,
-  `gpg` text NOT NULL
+  `email` varchar(50) NOT NULL,
+  `key_gpg` varchar(255) NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1;
 
 
