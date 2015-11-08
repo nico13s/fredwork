@@ -4,7 +4,6 @@ class UserController  extends ControllerBase {
 
     public function indexAction() {
         $aUser = User::find();
-
         $this->view->aUser = $aUser;
 //        echo '<pre>';
 //        // Traversing with a foreach
