@@ -12,85 +12,71 @@ class User extends Model {
 
     public $email;
 
-    public $gpg_key;
-
     /**
-     * @return mixed
+     * @return String
      */
     public function getEmail() {
         return $this->email;
     }
 
     /**
-     * @return mixed
+     * @return String
      */
     public function getFirstname() {
         return $this->firstname;
     }
 
     /**
-     * @return mixed
-     */
-    public function getGpgKey() {
-        return $this->gpg_key;
-    }
-
-    /**
-     * @return mixed
+     * @return Integer
      */
     public function getId() {
         return $this->id;
     }
 
     /**
-     * @return mixed
+     * @return String
      */
     public function getLastname() {
         return $this->lastname;
     }
 
     /**
-     * @return string
+     * @return String
      */
     public function getSource(){
         return "user";
     }
 
+    public function initialize(){
+        $this->hasMany("id", "UserGpg", "user_id");
+    }
+
     /**
-     * @param mixed $email
+     * @param String $email
      */
     public function setEmail($email) {
         $this->email = $email;
     }
 
     /**
-     * @param mixed $firstname
+     * @param String $firstname
      */
     public function setFirstname($firstname) {
         $this->firstname = $firstname;
     }
 
     /**
-     * @param mixed $gpg_key
-     */
-    public function setGpgKey($gpg_key) {
-        $this->gpg_key = $gpg_key;
-    }
-
-    /**
-     * @param mixed $id
+     * @param Integer $id
      */
     public function setId($id) {
         $this->id = $id;
     }
 
     /**
-     * @param mixed $lastname
+     * @param String $lastname
      */
     public function setLastname($lastname) {
         $this->lastname = $lastname;
     }
-
-
 
 }

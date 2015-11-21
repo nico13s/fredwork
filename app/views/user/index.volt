@@ -53,7 +53,7 @@
                                 <td>{{ user.getFirstname() }}</td>
                                 <td>{{ user.getLastname() }}</td>
                                 <td>{{ user.getEmail() }}</td>
-                                <td>{{ user.getGpgKey() }}</td>
+                                <td>{{ user.getUserGpg().count() }}</td>
                             </tr>
                             {% endfor %}
                         </table>
