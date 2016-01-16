@@ -7,7 +7,7 @@ return new \Phalcon\Config(array(
         'adapter'     => 'Mysql',
         'host'        => 'db',
         'username'    => 'root',
-        'password'    => '',
+        'password'    => 'ngooxav',
         'dbname'      => 'fredwork',
         'charset'     => 'utf8',
     ),

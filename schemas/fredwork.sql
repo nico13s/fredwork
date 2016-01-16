@@ -9,8 +9,8 @@ SET time_zone = "+00:00";
 CREATE DATABASE IF NOT EXISTS `fredwork` DEFAULT CHARACTER SET latin1 COLLATE latin1_swedish_ci;
 USE `fredwork`;
 
-DROP TABLE IF EXISTS `user`;
-CREATE TABLE `user` (
+DROP TABLE IF EXISTS `profile`;
+CREATE TABLE `profile` (
   `id` int(11) NOT NULL AUTO_INCREMENT,
   `firstname` varchar(50) NOT NULL,
   `lastname` varchar(50) NOT NULL,
@@ -18,13 +18,13 @@ CREATE TABLE `user` (
    PRIMARY KEY (`id`)
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1;
 
-DROP TABLE IF EXISTS `user_gpg`;
-CREATE TABLE `user_gpg` (
+DROP TABLE IF EXISTS `profile_gpg`;
+CREATE TABLE `profile_gpg` (
   `id` int(11) NOT NULL AUTO_INCREMENT,
-  `user_id` int(11) NOT NULL,
+  `profile_id` int(11) NOT NULL,
   `gpg` text NOT NULL,
   PRIMARY KEY (`id`),
-  CONSTRAINT fk_user FOREIGN KEY (user_id) REFERENCES user (id)
+  CONSTRAINT fk_profile FOREIGN KEY (profile_id) REFERENCES profile (id)
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1;
 
 

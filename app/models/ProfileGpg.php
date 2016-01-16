@@ -2,11 +2,11 @@
 
 use Phalcon\Mvc\Model;
 
-class UserGpg extends Model{
+class ProfileGpg extends Model{
 
     public $id;
 
-    public $user_id;
+    public $profile_id;
 
     public $gpg;
 
@@ -27,15 +27,15 @@ class UserGpg extends Model{
     /**
      * @return Integer
      */
-    public function getUserId() {
-        return $this->user_id;
+    public function getProfileId() {
+        return $this->profile_id;
     }
 
     /**
-     * @param Integer $user_id
+     * @param Integer $profile_id
      */
-    public function setUserId($user_id) {
-        $this->user_id = $user_id;
+    public function setProfileId($profile_id) {
+        $this->profile_id = $profile_id;
     }
 
     /**
@@ -53,7 +53,7 @@ class UserGpg extends Model{
     }
 
     public function initialize(){
-        $this->belongsTo("user_id", "User", "id");
+        $this->belongsTo("profile_id", "Profile", "id");
     }
 
 }

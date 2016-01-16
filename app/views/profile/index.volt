@@ -40,7 +40,7 @@
                                 <th>Clé GPG</th>
                             </tr>
                             {% set i = 0 %}
-                            {% for user in aUser  %}
+                            {% for profile in aProfile  %}
                                 {% if i == 0 %}
                                     {% set i = 1 %}
                                     {% set class = 'odd' %}
@@ -49,11 +49,11 @@
                                     {% set class = 'even' %}
                                 {% endif %}
                             <tr class="{{ class }}" >
-                                <td>{{ user.getId() }}</td>
-                                <td>{{ user.getFirstname() }}</td>
-                                <td>{{ user.getLastname() }}</td>
-                                <td>{{ user.getEmail() }}</td>
-                                <td>{{ user.getUserGpg().count() }}</td>
+                                <td>{{ profile.getId() }}</td>
+                                <td>{{ profile.getFirstname() }}</td>
+                                <td>{{ profile.getLastname() }}</td>
+                                <td>{{ profile.getEmail() }}</td>
+                                <td>{{ profile.getProfileGpg().count() }}</td>
                             </tr>
                             {% endfor %}
                         </table>

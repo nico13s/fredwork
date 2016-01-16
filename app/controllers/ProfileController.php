@@ -1,10 +1,10 @@
 <?php
 
-class UserController  extends ControllerBase {
+class ProfileController  extends ControllerBase {
 
     public function indexAction() {
-        $aUser = User::find();
-        $this->view->aUser = $aUser;
+        $aProfile = Profile::find();
+        $this->view->aProfile = $aProfile;
 //        echo '<pre>';
 //        // Traversing with a foreach
 //        foreach ($aUser as $user) {

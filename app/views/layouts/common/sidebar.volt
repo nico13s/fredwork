@@ -15,7 +15,7 @@
         <ul class="sidebar-menu">
             <li class="header">MAIN NAVIGATION</li>
             <li>
-                {{ link_to("user/index", '<i class="fa fa-table"></i> <span>Users</span>') }}
+                {{ link_to("profile/index", '<i class="fa fa-table"></i> <span>Profiles</span>') }}
             </li>
         </ul>
     </section>

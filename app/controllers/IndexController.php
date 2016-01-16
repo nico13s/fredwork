@@ -3,7 +3,7 @@
 class IndexController extends ControllerBase {
 
     public function indexAction() {
-        $this->view->countUsers = User::count();
+        $this->view->countProfiles = Profile::count();
     }
 
 }

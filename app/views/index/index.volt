@@ -16,7 +16,7 @@
 
                     <div class="info-box-content">
                         <span class="info-box-text">Nb Users</span>
-                        <span class="info-box-number">{{ countUsers }}</span>
+                        <span class="info-box-number">{{ countProfiles }}</span>
                     </div>
                     <!-- /.info-box-content -->
                 </div>

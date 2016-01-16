@@ -2,7 +2,7 @@
 
 use Phalcon\Mvc\Model;
 
-class User extends Model {
+class Profile extends Model {
 
     public $id;
 
@@ -44,11 +44,11 @@ class User extends Model {
      * @return String
      */
     public function getSource(){
-        return "user";
+        return "profile";
     }
 
     public function initialize(){
-        $this->hasMany("id", "UserGpg", "user_id");
+        $this->hasMany("id", "ProfileGpg", "profile_id");
     }
 
     /**
